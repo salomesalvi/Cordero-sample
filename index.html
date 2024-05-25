@@ -1,49 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Table</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>Portfolio :)</title>
+	<link rel="stylesheet" type="text/css" href="Website CSS.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <img src="https://th.bing.com/th/id/OIP.R5mbBKfQcUajME6oreUViQHaEO?rs=1&pid=ImgDetMain" class="img-thumbnail" style="float: right; width: 250px; height: 200px;">
-    <img src="https://th.bing.com/th/id/OIP.QOBNdpqk7vKxGcv2gXiQDAHaLH?rs=1&pid=ImgDetMain" class="img-thumbnail mx-auto d-block" style= "width: 250px; height: 200px;">
-    <table class = "table table-hover table-bordered container table-responsive">
-        <tr class = table-dark>
-            <th> First Name </th>
-            <th> Last Name </th>
-            <th> Email </th>
-            <div class="table-responsive">
-                
-        </tr>
-
-        <tr class = table-primary>
-            <td>Justin</td>
-            <td>Cordero</td>
-            <td>justincordero687@gmail.com</td>
-        </tr>
-            
-        <tr class = "table-success">
-            <td>Gilbert</td>
-            <td>Ngongi</td>
-            <td>gilbertngongi@gmail.com</td>
-        </tr>
-
-        <tr class = "table-danger">
-            <td>Jayan</td>
-            <td>Rodolfo</td>
-            <td>Jayanrodolfo@gmail.com</td>
-        </tr>
-
-        <tr class = "table-secondary">
-            <td>Pipay</td>
-            <td>Olasiman</td>
-            <td>PipayOlasiman@gmail.com</td>
-        </tr>
-        
-
-    </table>
-    
+<body style="background-color: black;">
+	<!--1-->
+	<div id="display_head" class="container-fluid bg-primary sticky-top header text-justify p-5">
+		<img src="https://th.bing.com/th/id/OIP.G-vDeVFZOww4c-56GdVlmQAAAA?rs=1&pid=ImgDetMain" alt="test"	  class="img-thumbnail img-fluid">
+		<a href="#About">Home</a>
+		<a href="#About">About</a>
+		<a href="#MyWork">MyWork</a>
+		<a href="#Services">Services</a>
+		<a href="#Contact">Contact</a>
+	</div>
+	<div id="main" style="display: none;">	
+		<!--2-->
+		<div id="About">
+			<div id="bout_sect">
+				<br><br><br><br><br><br><br>
+				<h1>About:</h1>
+				<h3>Hi! If you're looking for a nonsense website, <br>then you're in the right place!</h3>
+				<p>My name is "Justin Cordero" and if you want to waste your time then you should proceed.</p>
+			</div>
+			<div id="about_sidebar">
+				<img src="https://i.pinimg.com/736x/2b/5a/65/2b5a658b6ff3a6260cda4af7d29eb298.jpg" alt="motivation" class="img-thumbnail img-fluid">
+				<h2>About Me:</h2>
+				<p>So here's the thing, I do like photography, cinematology, and Editing photos and videos. when it comes to hobby, I love listening to music, watching movies and anime. In sporst, I love playing Basketball, Billiards and also I'm interested to try Volleyball </p>
+				<div class="buttons">
+					<input type="button" value="Skills:" onclick="xd('Skills')"><br>
+					<input type="button" value="Experiences:" onclick="xd('Exp')"><br>
+					<input type="button" value="Education:" onclick="xd('Educ')"><br>
+				</div>
+				<div class="texts">
+					<div id="Skills" style="display: none;">
+						<h6>Skills:</h6>
+						<h6>Soft Skills:</h6>
+						<p>Communication, Creativty, Collaboration Skills, <br>Planning and Organization, Adaptable, Problem Solving, 	<br>	Active Listener, Time Management, Technology.</p>
+						<h6>Hard Skills:</h6>
+						<p>HTML/CSS,<br> Bootstrap</p>
+					</div>
+					<div id="Exp" style="display: none;">
+						<h6>Experiences:</h6>
+						<p>2023:<br>Service Crew</p>
+					</div>
+					<div id="Educ" style="display: none;">
+						<h6>Education:</h6>
+						<p>2021 - 2023: <br>Ninoy Aquino National HighSchool (SHS)<br> Gas Strand</p>
+						<p>2023 - 2024 <br>Global Reciprocal Colleges <br> Bachelor of Science in Information Technology</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Portfolio-->
+		<div id="MyWork">
+			<h2 style="text-align: center;">My Portfolio:</h2>
+			<div class="work">
+				<a href="#" style="color: white;"><h5>Layout Design:</h5></a>
+				<a href="#" style="color: white;"><h5>Web Design:</h5></a>
+			</div>
+			<div class="work">
+				<a href="#"><img src="https://th.bing.com/th?id=OIF.EGZN8%2bqyJ7JGqCRt3Nb1sw&rs=1&pid=ImgDetMain"></a>
+				<a href="#"><img src="https://th.bing.com/th/id/OIF.ipmFvwT2K0GCYgGkmjCI2g?rs=1&pid=ImgDetMain"></a>		
+			</div>
+		</div>
+		<!--Services-->
+		<div id="Services">
+			<h2 style="text-align: center;">Services:</h2>
+			<div class="list">
+				<div>
+					<h2>Web Developing:</h2>
+            	    <p>Good code is its own best documentation. As you're about to add a comment,
+						ask yourself, "How can I improve the code so that this comment isn't needed?" Improve the code and then document it to make it even clearer.</p>
+						<a href="#">Learn more</a>	
+				</div>
+				<div>
+					<h2>Editing</h2>
+                	<p>When you write a book, you spend day after day scanning and identifying the trees. 
+                    When you’re done, you have to step back and look at the forest.</p>
+                	<a href="#">Learn more</a>
+				</div>
+			</div>	
+		</div>
+		<div id="Contact">
+			<h2>Contact Me:</h2>
+			<h3>Email: justincordero687@gmail.com</h3>
+				<h3>Contact No.: 09128501357</h3>
+			<div class="form">
+				<form>
+					<label for="Name">Your Name:</label><br>
+					<input type="text" placeholder="Your Name" id="name" name="name"><br>
+					<label for="Name">Your E-mail:</label><br>
+					<input type="text" placeholder="Your E-mail" id="email" name="email"><br>
+					<label for="Name">Your Message:</label><br>
+					<input type="text" placeholder="Your Message" id="message" name="message" style="padding-bottom: 50px;"><br>
+					<input type="button" value="Submit" onclick="Submit()">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="Home" class="container-fluid">
+		<div class="container" id="test">
+			<h1>Welcome to Justin's Portfolio</h1>
+      		<input type="button" value="Get Started" onclick="xd('main')">
+		</div>
+	</div>
+	<script>
+        window.onload = function() {
+            window.scrollTo(0, 0, 0);
+        };           
+    </script>
+    <script type="text/javascript">
+    	function xd(elementId){
+    		var hidden = document.getElementById(elementId);
+            if (hidden.style.display === "none") {
+                hidden.style.display = "block";
+            } else {
+                hidden.style.display = "none"
+            }    
+    	}
+    </script>
+	<script>
+		function Submit(){
+            var name = document.getElementById("name").value;
+			var comment = document.getElementById("message").value;
+                if (name && comment) {
+                    if (comment === comment) {
+                        window.alert("Thank you for your message ") + name;
+					}
+				}
+			} 
+	</script>
 </body>
 </html>
